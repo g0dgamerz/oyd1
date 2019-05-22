@@ -1,0 +1,192 @@
+        html {
+        positon:relative;
+        height: 100%;
+        width:100%;
+        background-color:#666;
+      }
+      html:before {
+        content:'';
+        height:100%;
+        vertical-align:middle;
+        width:50%;
+        display:inline-block;
+      }
+body {
+        display:inline-block;
+        position:relative;
+        font-size:12px;
+        line-height:20px;
+        width:75vmin;
+        height:55vmin;
+        background-image: url('giphy.gif');
+        background-repeat: no-repeat;
+        padding:0;
+        margin:0 0 0 -37.5vmin;
+        vertical-align:middle;
+        box-shadow: 1px 1px 3px #ddd, -2px -2px 5px #333;
+        border-radius:.66vmin;
+      }
+       .positioner {
+        position:absolute;
+        height:10%;
+        width:10%;
+      }
+.flame-wrapper {
+    position: relative;
+      width:10%;
+        height:10%;
+        border-radius:50%;
+        top:45%;
+        left:45%;
+}
+.red {
+    width: 80px;
+    height: 80px;
+    background: orangered;
+}
+.orange {
+    width: 60px;
+    height: 60px;
+    background: orange;
+    left: 10px;
+}
+.gold {
+    width: 45px;
+    height: 45px;
+    background: gold;
+    left: 18px;
+}
+.white {
+    width: 35px;
+    height: 35px;
+    background: lightyellow;
+    left: 22px;
+}
+.flame{
+    bottom: 0;
+    
+    position: absolute;
+    border-radius: 50% 0% 50% 50%;
+    transform: rotate(-45deg);
+}
+.red {
+    box-shadow: 0px 0px 10px 5px orangered;
+}
+.orange {
+    box-shadow: 0px 0px 12px 6px orange;
+}
+.gold {
+    box-shadow: 0px 0px 9px 4px gold;
+}
+.white {
+    box-shadow: 0px 0px 9px 4px lightyellow;
+}
+.blue {
+    box-shadow: 0px 0px 15px 10px darkblue;
+}
+.black {
+    box-shadow: 0px 0px 15px 10px black;
+}
+.base {
+    border-radius: 50%;
+    position: absolute;
+}
+.flame-wrapper {
+    animation: flicker 3ms ease-in infinite;
+    -webkit-transition:left .66s ease-out, top  .66s ease-out;
+        width:10%;
+        height:10%;
+        border-radius:50%;
+        top:45%;
+        left:45%;
+    transition:left 1s ease-out, top 1s ease-out;
+    box-shadow: -1px -1px 3px #fff, 2px 2px 5px #000;
+}
+@keyframes flicker {
+    0% {transform: rotate(-1deg);}
+    20% {transform: rotate(2deg) scaleY(1.05);}
+    40% {transform: rotate(-1deg);}
+    60% {transform: rotate(1deg);}
+    80% {transform: rotate(-1deg) scaleY(0.90);}
+    100% {transform: rotate(1deg);}
+}
+[id^="row-1"],
+      [id^="row-1"]:hover  ~ .flame-wrapper {
+        left: 0;
+      }
+      [id^="row-2"],
+      [id^="row-2"]:hover  ~ .flame-wrapper {
+        left: 10%;
+      }
+      [id^="row-3"],
+      [id^="row-3"]:hover  ~ .flame-wrapper {
+        left: 20%;
+      }
+      [id^="row-4"],
+      [id^="row-4"]:hover  ~ .flame-wrapper {
+        left: 30%;
+      }
+      [id^="row-5"],
+      [id^="row-5"]:hover  ~ .flame-wrapper {
+        left: 40%;
+      }
+      [id^="row-6"],
+      [id^="row-6"]:hover  ~ .flame-wrapper {
+        left: 50%;
+      }
+      [id^="row-7"],
+      [id^="row-7"]:hover  ~ .flame-wrapper {
+        left: 60%;
+      }
+      [id^="row-8"],
+      [id^="row-8"]:hover  ~ .flame-wrapper {
+        left: 70%;
+      }
+      [id^="row-9"],
+      [id^="row-9"]:hover  ~ .flame-wrapper {
+        left: 80%;
+      }
+      [id^="row-10"],
+      [id^="row-10"]:hover  ~ .flame-wrapper {
+        left: 90%;
+      }
+      [id$="col-1"],
+      [id$="col-1"]:hover  ~ .flame-wrapper {
+        top: 0;
+      }
+      [id$="col-2"],
+      [id$="col-2"]:hover  ~ .flame-wrapper {
+        top: 10%;
+      }
+      [id$="col-3"],
+      [id$="col-3"]:hover  ~ .flame-wrapper {
+        top: 20%;
+      }
+      [id$="col-4"],
+      [id$="col-4"]:hover  ~ .flame-wrapper {
+        top: 30%;
+      }
+      [id$="col-5"],
+      [id$="col-5"]:hover  ~ .flame-wrapper {
+        top: 40%;
+      }
+      [id$="col-6"],
+      [id$="col-6"]:hover  ~ .flame-wrapper {
+        top: 50%;
+      }
+      [id$="col-7"],
+      [id$="col-7"]:hover  ~ .flame-wrapper {
+        top: 60%;
+      }
+      [id$="col-8"],
+      [id$="col-8"]:hover  ~ .flame-wrapper {
+        top: 70%;
+      }
+      [id$="col-9"],
+      [id$="col-9"]:hover  ~ .flame-wrapper {
+        top: 80%;
+      }
+      [id$="col-10"],
+      [id$="col-10"]:hover  ~ .flame-wrapper {
+        top: 90%;
+      }
